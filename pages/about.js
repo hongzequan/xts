@@ -1,6 +1,7 @@
 // pages/about.js
-import Head from 'next/head';
-import Header from '../components/Header';
+import Head from "next/head";
+import Header from "../components/Header";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -9,10 +10,8 @@ export default function About() {
         <title>关于我们</title>
       </Head>
       <Header />
-      <main>
-        <h1>关于我们</h1>
-        <p>这是关于我们的页面。</p>
-      </main>
+      <Link href="/">首页</Link>
+      <Link href="/about">关于我们</Link>
     </div>
   );
 }
